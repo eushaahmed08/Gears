@@ -29,7 +29,8 @@ const navbar = () => {
 
             {/* add icons */}
             <div className="icons">
-                <ShoppingBagOutlinedIcon/>
+                <sup>2</sup>
+                <ShoppingBagOutlinedIcon sx={{fontsize : "28px"}}/>
 
             </div>
 
