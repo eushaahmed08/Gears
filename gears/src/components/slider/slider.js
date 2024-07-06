@@ -1,13 +1,43 @@
-import React from 'react'
+import React , {useState} from 'react';
 import "./slider.css"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import image1 from '../../assets/sliderimg/image3.png' // Import the image
+import image1 from '../../assets/sliderimg/image1.png'
+import image2 from '../../assets/sliderimg/image2.png'
+import image3 from '../../assets/sliderimg/image3.png' // Import the image
 
 const Slider = () => {
+
+
+    const [count , setCount] = useState(0)
+
+
     let images = [
-        { img: image1 }, // Use the imported image
-    ]
+        { img: image1 },
+        { img: image2 },
+        { img: image3 } // Use the imported image
+    ];
+
+
+    
+
+    const previous = () =>{
+        setCount(count-1);
+
+        if(count==0)
+            {
+                setCount(2)
+            }
+    }
+    const next = () =>{
+        setCount(count+1);
+        if(count==2)
+            {
+                setCount(0)
+            }
+        
+    }
+
 
     return (
         <div className="slider-container">
@@ -19,10 +49,10 @@ const Slider = () => {
                 </div>
 
                 <div className="slider-box">
-                    <img src={images[0].img} alt="Product" />
+                    <img src={images[count].img} alt="Product" />
                 </div>
-                <ArrowBackIosIcon sx ={{position : "absolute" , top : "36%" , left : "1%" , fontSize : "75px" }}/>
-                < ArrowForwardIosIcon sx ={{position : "absolute" , top : "36%" , right : "1%" , fontSize : "75px" }}/>
+                <ArrowBackIosIcon sx ={{position : "absolute" , top : "36%" , left : "1%" ,cursor:"pointer", fontSize : "75px" }} onClick={previous}/>
+                < ArrowForwardIosIcon sx ={{position : "absolute" , top : "36%" , right : "1%" ,cursor:"pointer", fontSize : "75px" }} onClick={next}/>
             </div>
         </div>
     )
