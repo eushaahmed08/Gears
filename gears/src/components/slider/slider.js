@@ -24,14 +24,14 @@ const Slider = () => {
     const previous = () =>{
         setCount(count-1);
 
-        if(count==0)
+        if(count === 0)
             {
                 setCount(2)
             }
     }
     const next = () =>{
         setCount(count+1);
-        if(count==2)
+        if(count===2)
             {
                 setCount(0)
             }
