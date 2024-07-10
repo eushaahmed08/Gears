@@ -12,7 +12,8 @@ const Home = () => {
       <HeroSection/>
       <TopProducts/>
       <RenderAllProducts/>
-    
+      <footer/>
+              
     
     
     

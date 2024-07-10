@@ -32,7 +32,7 @@ const RenderAllProducts = () => {
                                         <div className='overlay-info'>
                                             <p>Title : {product.title}</p>
                                             <p>Price : {product.price}</p>
-                                            <button>Add top cart</button>
+                                            <p>Des : {product.des}</p>
                                         </div>
                                     </div>
                                     <img src={product.img} alt={product.name} />
