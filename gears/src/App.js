@@ -10,6 +10,8 @@ import Contact from "./pages/contact/Contact";
 import Cart from "./pages/cart/Cart";
 import SignUp from "./pages/signup/SignUp";
 import LogIn from "./pages/login/LogIn";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
