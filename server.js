@@ -18,7 +18,13 @@ connectDB();
 const app = express();
 
 //middelwares
-app.use(cors());
+app.use(cors( 
+  {
+    origin: ["https://vercel.com/eushaahmed08s-projects/gears"],
+    methods: ['POST', 'GET', 'PUT', 'DELETE'],
+    credentials: true
+  }
+));
 app.use(express.json());
 app.use(morgan("dev"));
 
@@ -29,7 +35,7 @@ app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome to GEARS</h1>");
 });
 
 //PORT
