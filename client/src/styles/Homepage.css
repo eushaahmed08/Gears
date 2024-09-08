@@ -1,81 +1,80 @@
 .banner-img {
-    margin-top: 60px;
-  }
-  
-  .home-page h1 {
-    color: gray;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .home-page {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .home-page .card {
-    background-color: rgba(128, 128, 128, 0.097);
-    width: 18rem;
-  }
-  .home-page .card-name-price {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .home-page .card-price {
-    color: green;
-    font-weight: bold;
-  }
-  .home-page button {
-    border-radius: 0;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .home-page .card-text {
-    color: rgb(90, 89, 89);
-  }
-  
-  .home-page .card img:hover {
-    transform: scale(0.9);
-  }
-  
-  .home-page .card-img-top {
-    height: 300px !important;
-  }
-  /* ==================
-  filters
-  ============== */
-  .filters h4 {
-    margin-top: 100px;
-    color: gray !important;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
-  }
-  
-  .ant-checkbox-wrapper:first-of-type {
-    margin-left: 8px;
-  }
-  
-  .ant-checkbox-wrapper {
-    margin: 2px;
-  }
-  .ant-radio-wrapper {
-    margin-bottom: 5px !important;
-    margin-left: 10px;
-  }
-  
-  .filters button {
-    background-color: black;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    margin-top: 20px;
-  }
-  
-  .loadmore {
-    color: green;
-    font-weight: bold;
-    font-size: 20px !important;
-  }
+  margin-top: 60px;
+}
+
+.home-page h1 {
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-page .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: green;
+  font-weight: bold;
+}
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.home-page .card img:hover {
+  transform: scale(0.9);
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+}
+/* Style for Filter By Category and Filter By Price */
+.filter-title {
+  color: black; /* Blue color for light mode */
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  margin-top: 100px;
+}
+
+/* Dark mode styles for Filter titles */
+.dark-mode .filter-title {
+  color: #e0e0e0 !important; /* Light text color for dark mode */
+}
+
+/* Dark mode styles for filters */
+.dark-mode .filters h4 {
+  color: #e0e0e0 !important; /* Light text color for headings in dark mode */
+}
+
+.dark-mode .filters .ant-checkbox-wrapper, 
+.dark-mode .filters .ant-radio-wrapper {
+  color: #e0e0e0; /* Light text color for checkboxes and radio buttons in dark mode */
+}
+
+/* Adjusted button styles for dark mode */
+.filters button {
+  background-color: #333; /* Dark mode button background */
+  color: #e0e0e0; /* Button text color for dark mode */
+}
+
+.filters button:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}

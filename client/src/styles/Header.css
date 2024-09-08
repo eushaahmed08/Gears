@@ -1,0 +1,67 @@
+/* Header.css */
+
+/* Dark mode styles for the navbar */
+.navbar.dark-mode {
+    background-color: #1c1c1c; /* Darker gray for the navbar */
+    
+  }
+  
+  /* Dark mode toggle button */
+  .dark-mode-toggle {
+    background-color: #007bff; /* Vibrant blue */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight scaling effect for emphasis */
+  }
+  
+/* Cart icon styling */
+.cart-icon-container {
+  position: fixed;
+  top: 150px;    /* Distance from the top of the page */
+  right: 40px;  /* Distance from the right side of the page */
+  /* You can also use 'left' or 'bottom' to further adjust the position */
+  z-index: 1000;  /* Ensures the icon stays on top of other elements */
+}
+
+  
+  .cart-icon {
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+
+  /* Dark mode styles for the navbar text */
+.navbar.dark-mode .nav-link {
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .navbar.dark-mode .navbar-brand {
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .navbar.dark-mode .dropdown-menu {
+    background-color: #1c1c1c; /* Dark background for dropdown */
+    color: #e0e0e0; /* Light text color for dropdown items */
+  }
+  
+  .navbar.dark-mode .dropdown-menu .dropdown-item {
+    color: #e0e0e0; /* Light text color for dropdown items */
+  }
+  
+  .navbar.dark-mode .dropdown-menu .dropdown-item:hover {
+    background-color: #333; /* Slightly lighter background on hover */
+    color: #fff; /* White text on hover */
+  }
+  

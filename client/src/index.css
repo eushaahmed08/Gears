@@ -98,3 +98,108 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #2f2a2a; /* Deep, rich black background */
+  color: #e0e0e0; /* Soft light text color */
+}
+
+.navbar.dark-mode {
+  background-color: #363030; /* Darker gray for the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+}
+
+.banner-img.dark-mode {
+  opacity: 0.85; /* Slight transparency to blend well with dark mode */
+}
+
+.card.dark-mode {
+  background-color: #1e1e1e; /* Dark card background */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #444; /* Darker border for definition */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Smooth zoom effect */
+  opacity: 0.9; /* Subtle transparency on hover */
+}
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle {
+  position: relative; /* Relative positioning */
+  background-color: #ff6f61; /* Vibrant coral color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #e55b50; /* Slightly darker coral shade on hover */
+  transform: scale(1.05); /* Slight scaling effect for emphasis */
+}
+
+
+/* Light mode styles (default) */
+body {
+  background-color: #ffffff; /* Clean white background */
+  color: #333; /* Dark text for readability */
+}
+
+.navbar {
+  background-color: #ffeb3b; /* Bright yellow background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.banner-img {
+  opacity: 0.95; /* Slight transparency for a refined look */
+}
+
+.card {
+  background-color: #ffffff; /* White card background */
+  color: #333; /* Dark text color */
+  border: 1px solid #ddd; /* Light border for a clean look */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Smooth zoom effect */
+  opacity: 0.85; /* Subtle transparency on hover */
+}
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle {
+  position: relative; /* Relative positioning */
+  background-color: #007bff; /* Vibrant blue color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #0056b3; /* Darker blue shade on hover */
+  transform: scale(1.05); /* Slight scaling effect for emphasis */
+}
+
+
+.dark-mode-toggle:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scaling effect for emphasis */
+}

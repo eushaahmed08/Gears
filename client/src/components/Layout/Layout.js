@@ -3,6 +3,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 import { Helmet } from "react-helmet";
 import { Toaster } from "react-hot-toast";
+ // Import the DarkModeToggle
+//import DarkModeToggle from './../DarkModeToggle';
+
 const Layout = ({ children, title, description, keywords, author }) => {
   return (
     <div>
@@ -13,22 +16,24 @@ const Layout = ({ children, title, description, keywords, author }) => {
         <meta name="author" content={author} />
         <title>{title}</title>
       </Helmet>
+
       <Header />
+      
       <main style={{ minHeight: "70vh" }}>
         <Toaster />
-
         {children}
       </main>
+
       <Footer />
     </div>
   );
 };
 
 Layout.defaultProps = {
-  title: "Ecommerce app - shop now",
-  description: "mern stack project",
-  keywords: "mern,react,node,mongodb",
-  author: "Techinfoyt",
+  title: "GEARS",
+  description: "MERN stack project",
+  keywords: "mern, react, node, mongodb",
+  author: "a2",
 };
 
 export default Layout;
