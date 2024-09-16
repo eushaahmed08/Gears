@@ -101,13 +101,13 @@
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #2f2a2a; /* Deep, rich black background */
-  color: #e0e0e0; /* Soft light text color */
+  background-color: #0a5a61; /* Deep, rich black background */
+  color: black; /* Soft light text color */
 }
 
 .navbar.dark-mode {
-  background-color: #363030; /* Darker gray for the navbar */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  background-color: #423f03; /* Darker gray for the navbar */
+ 
 }
 
 .banner-img.dark-mode {
@@ -116,7 +116,7 @@ body.dark-mode {
 
 .card.dark-mode {
   background-color: #1e1e1e; /* Dark card background */
-  color: #e0e0e0; /* Light text color */
+  color: #66FCF1; /* Light text color */
   border: 1px solid #444; /* Darker border for definition */
 }
 
@@ -133,7 +133,7 @@ body.dark-mode {
 .dark-mode-toggle {
   position: relative; /* Relative positioning */
   background-color: #ff6f61; /* Vibrant coral color */
-  color: white;
+  color: #66FCF1;
   border: none;
   padding: 10px 15px;
   border-radius: 25px;
@@ -151,16 +151,17 @@ body.dark-mode {
 
 /* Light mode styles (default) */
 body {
-  background-color: #ffffff; /* Clean white background */
+  background-color: #60d3ef;
   color: #333; /* Dark text for readability */
 }
 
 .navbar {
-  background-color: #ffeb3b; /* Bright yellow background */
+  background-color: rgb(242, 240, 247); /* Bright yellow background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .banner-img {
+
   opacity: 0.95; /* Slight transparency for a refined look */
 }
 

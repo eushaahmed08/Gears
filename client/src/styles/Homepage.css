@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 .home-page .card {
-  background-color: rgba(128, 128, 128, 0.097);
+  background-color: rgba(242, 234, 234, 0.742)!important;
   width: 18rem;
 }
 .home-page .card-name-price {
