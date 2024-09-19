@@ -38,7 +38,7 @@ const Register = () => {
   };
 
   return (
-    <Layout title="Register - GEARS">
+    <Layout title="Register - Ecommer App">
       <div className="form-container ">
         <form onSubmit={handleSubmit}>
           <h4 className="title">REGISTER FORM</h4>
@@ -98,7 +98,17 @@ const Register = () => {
               required
             />
           </div>
-         
+          <div className="mb-3">
+            <input
+              type="text"
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value)}
+              className="form-control"
+              id="exampleInputEmail1"
+              placeholder="Birhtday"
+              required
+            />
+          </div>
           <button type="submit" className="btn btn-primary">
             REGISTER
           </button>
