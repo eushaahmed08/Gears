@@ -106,7 +106,7 @@ body.dark-mode {
 }
 
 .navbar.dark-mode {
-  background-color: #423f03; /* Darker gray for the navbar */
+  background-color: white; /* Darker gray for the navbar */
  
 }
 
@@ -151,12 +151,12 @@ body.dark-mode {
 
 /* Light mode styles (default) */
 body {
-  background-color: #60d3ef;
+  background-color: #ffc300;
   color: #333; /* Dark text for readability */
 }
 
 .navbar {
-  background-color: rgb(242, 240, 247); /* Bright yellow background */
+  background-color: rgba(220, 220, 220, 0.648); /* Bright yellow background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 

@@ -14,6 +14,8 @@ const Header = () => {
   const [cart] = useCart();
   const categories = useCategory();
   const [darkMode, setDarkMode] = useState(false);
+  const smallGear1Style = {height: "35px", width: "35px",  position: "absolute", top: "10px", left: "95px" };
+  const smallGear2Style = {height: "35px", width: "35px",  position: "absolute", top: "70px", left: "95px" };
 
   const handleLogout = () => {
     setAuth({
@@ -46,13 +48,35 @@ const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            {/* Replace the text with the logo */}
-            <Link to="/" className="navbar-brand">
+            {/* Replace the text with the logo and rotating gears */}
+            <Link to="/" className="navbar-brand gear-logo-container">
+              <div className="gear-logo-wrapper">
+                <img
+                  src="/images/logo2.png" // Main gear logo
+                  alt="GEARS"
+                  className="gear-icon"
+                  style={{ height: "65px", width: "65px",position: "relative", top: "10px", left: "30px" }}
+                />
+                <img
+                  src="/images/logo4.png" // Smaller gear 1
+                  alt="Small Gear 1"
+                  className="small-gear small-gear1"
+                  style={smallGear1Style}
+                />
+                <img
+                  src="/images/logo4.png" // Smaller gear 2
+                  alt="Small Gear 2"
+                  className="small-gear small-gear2"
+                  style={smallGear2Style}
+                />
+
+              </div>
               <img
-                src="/images/logo.png" // Make sure the path is correct
-                alt="GEARS"
-                style={{ height: "80px" ,width :"80"}} // Adjust the size of the logo as needed
-              />
+                  src="/images/logo6.png" // Smaller gear 2
+                  alt="Small Gear 2"
+                  //className="small-gear small-gear2"
+                  style={{ position: "relative", top: "10px", left: "45px" }}
+                />
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />

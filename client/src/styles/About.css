@@ -1,0 +1,104 @@
+.about-page-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #0a0a0a00;
+  color: #f0f0f0;
+  padding: 2rem;
+  position: relative;
+}
+
+.gear-animation {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gear-icon {
+  width: 150px;
+  height: 150px;
+  opacity: 0.85;
+  animation: spinGear 6s linear infinite;
+}
+
+/* Smaller gears */
+.small-gear {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.85;
+}
+
+.small-gear1 {
+  top: -10px;
+  right: 240px;
+  animation: spinSmallGearReverse 4s linear infinite;
+}
+
+.small-gear2 {
+  bottom: -20px;
+  right: 245px;
+  animation: spinSmallGear 4s linear infinite;
+}
+
+/* Animations */
+@keyframes spinGear {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinSmallGear {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinSmallGearReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.about-content-tech {
+  flex: 1;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.tech-heading {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

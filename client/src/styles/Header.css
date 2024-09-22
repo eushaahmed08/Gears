@@ -2,7 +2,7 @@
 
 /* Dark mode styles for the navbar */
 .navbar.dark-mode {
-    background-color: grey; /* Darker gray for the navbar */
+    background-color: rgba(220, 220, 220, 0.646); /* Darker gray for the navbar */
     
   }
   
@@ -46,11 +46,11 @@
 
   /* Dark mode styles for the navbar text */
 .navbar.dark-mode .nav-link {
-    color: #e0e0e0; /* Light text color for dark mode */
+    color: black; /* Light text color for dark mode */
   }
   
   .navbar.dark-mode .navbar-brand {
-    color: #e0e0e0; /* Light text color for dark mode */
+    color: black; /* Light text color for dark mode */
   }
   
   .navbar.dark-mode .dropdown-menu {

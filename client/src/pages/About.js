@@ -1,25 +1,18 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
+import "./../styles/About.css"; // Import your CSS file for custom styles
 
 const About = () => {
   return (
-    <Layout title={"About us - Ecommer app"}>
-      <div className="row contactus ">
-        <div className="col-md-6 ">
-          <img
-            src="/images/about.jpeg"
-            alt="contactus"
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className="col-md-4">
-          <p className="text-justify mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+    <Layout title={"About Gear - Tech Ecommerce"}>
+      <div className="about-page-tech">
+
+        <div className="about-content-tech">
+          <h2 className="tech-heading">Welcome to Gear</h2>
+          <p className="tech-description">
+            At Gear, we are dedicated to bringing you the latest and greatest in
+            technology. Whether you're looking for the most advanced gadgets or reliable accessories, 
+            we've got you covered. Join us as we innovate, create, and help you gear up for the future.
           </p>
         </div>
       </div>
